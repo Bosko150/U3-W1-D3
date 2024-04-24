@@ -30,7 +30,7 @@ class SingleBook extends React.Component {
     const { selected } = this.state;
     return (
       <Col xs={6} md={3} lg={2}>
-        <Card className={`h-100 card ${selected ? "selected" : ""}`} onClick={this.handleClick}>
+        <Card className={`h-100 card ${selected ? "selectedCard" : ""}`} onClick={this.handleClick}>
           <Card.Img variant="top" src={this.props.book.img} />
           <Card.Body className="d-flex flex-column justify-content-end">
             <Card.Title>{this.props.book.title}</Card.Title>
